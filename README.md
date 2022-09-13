@@ -1,1 +1,1 @@
-# This repo is live at https://freshteacher.tech/pdfjs_pdf_viewer/
+# This repo is live at https://freshteacher.tech/pdf_viewer/
