@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>PDF Viewer</title>
+  </head>
+
+  <body>
+    
+    <div class="top-bar">
+        <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-circle-left"></i> Previous Page
+        </button>
+
+        <button class="btn" id="next-page">
+            Next Page <i class="fas fa-arrow-circle-right"></i>
+        </button>
+
+        <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+
+        <!-- <br><a href="sample.pdf" download="P.6 Science Lesson Notes.pdf"><button class="btn" id="next-page">
+          Download This File  <i class='fas fa-file-download'></i>
+      </button></a href><br><br>
+
+      <a href="http://www.freshteacher.tech"><button class="btn" id="next-page">
+        Go to Homepage <i class='fas fa-home'></i>
+
+    </button></a href> -->
+    </div>
+
+    <canvas id="pdf-render"></canvas>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar {
+        overflow: hidden;
+        background-color: rgb(154, 2, 2);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .navbar a:hover {
+        background: #f1f1f1;
+        color: black;
+      }
+      
+      .navbar a.active {
+        background-color: #00ff5e;
+        color: white;
+      }
+      
+      .navbar a.inactive {
+        background-color: #ff0000;
+        color: white;
+      }
+      .main {
+        padding: 16px;
+        margin-bottom: 30px;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="navbar">
+        <a href="sample.pdf" download="P.6 Science Lesson Notes.pdf" class="active">Download  Document <i class='fas fa-file-download'></i></a>
+        <a href="http://www.freshteacher.tech" class="inactive">Close  Document <i class='fas fa-window-close'></i></a>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
